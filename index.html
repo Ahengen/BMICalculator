@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BMI Calculator</title>
+</head>
+<body>
+
+<h1>Body Mass Index(BWI) Calculator</h1>
+
+<fieldset>
+
+    <label for="numHeight">Height in Inches</label>
+    <input type="number" min="59" max="79" id="numHeight" value="59">
+    <br>
+
+    <label for="numWeight">Weight in Pounds</label>
+    <input type="number" min="88" max="353" id="numWeight" value="88">
+    <br>
+
+    <button>Calculate your BMI</button>
+
+    <p class="output">
+        Your BMI is <span id="personsBMI"></span>. This puts you in the <span id="weight"></span> category.
+    </p>
+
+</fieldset>
+
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="code.js"></script>
+
+</body>
+</html>
