@@ -1,12 +1,13 @@
 $(document).ready(function(){
-    $("button").on("click", updateTotals);
+    $("form").on("submit", updateTotals);
     $("#numHeight").on("change", updateTotals);
     $("#numWeight").on("change", updateTotals);
 });
 
 updateTotals();
 
-function updateTotals () {
+function updateTotals (event) {
+    event.preventDefault();
     //determine inches in height and pounds in weight
     var numHeight = parseFloat($("#numHeight").val());
     console.log("Height in inches: " + numHeight);
